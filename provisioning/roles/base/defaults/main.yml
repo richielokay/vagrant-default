@@ -1,0 +1,43 @@
+apache_user: apache
+
+db_username: root
+db_password: root
+
+mail_username: XXXXXX
+mail_password: XXXXXX
+
+redcats_ftp_username: XXXXXX
+redcats_ftp_password: XXXXXX
+
+two_way_key: XXXXXX
+cdn_username: XXXXXX
+cdn_apikey: XXXXXX
+
+sendgrid_username: XXXXXX
+sendgrid_password: XXXXXX
+
+twilio_sid: XXXXXX
+twilio_token: XXXXXX
+twilio_sid_test: XXXXXX
+twilio_token_test: XXXXXX
+
+mailgun_key: XXXXXX
+mailgun_public_key: XXXXXX
+mailgun_username: XXXXXX
+mailgun_password: XXXXXX
+
+php_memory_limit: "528M"
+php_max_execution_time: "2"
+php_upload_max_filesize: "150M"
+php_apc_enabled_in_ini: true
+php_apc_cache_by_default: "1"
+php_apc_shm_size: "96M"
+php_date_timezone: "America/New_York"
+php_enable_apc: true
+php_sendmail_path: "/usr/sbin/sendmail -t -i"
+php_short_open_tag: true
+php_enable_xdebug: false
+php_xdebug_port: 9000
+
+openssl_certs_path: /etc/pki/tls/certs/
+openssl_keys_path: /etc/pki/tls/private/

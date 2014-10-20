@@ -1,0 +1,13 @@
+- name: Install shell utilities
+  template: src={{ item.src }} dest=/usr/bin/{{ item.dest }} mode=755
+  with_items:
+    - { src: curl_continuous.sh.j2, dest: curl_continuous }
+    - { src: phplog.sh.j2, dest: phplog }
+
+- name: Create dump folder
+  sudo: no
+  remote_user: dev
+  file: path=~/dump state=directory
+
+- name: Set permissions on /var/log/httpd
+  file: path=/var/log/httpd owner=dev group=developer

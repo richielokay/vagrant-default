@@ -1,0 +1,13 @@
+- hosts: all
+  sudo: yes
+  vars:
+    apache_user: dev
+
+  roles:
+    - base
+    - dev
+
+  tasks:
+
+  - name: Run Apache
+    service: name=httpd state=started

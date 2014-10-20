@@ -1,0 +1,6 @@
+.sass-cache/
+.DS_Store
+legacy/
+.idea/
+.galaxy-roles/
+.vagrant
